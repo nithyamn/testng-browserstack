@@ -4,7 +4,7 @@
 
 ![BrowserStack Logo](https://d98b8t1nnulk5.cloudfront.net/production/images/layout/logo-header.png?1469004780)
 
-[![BrowserStack Status](https://www.browserstack.com/automate/badge.svg?badge_key=<badge_key>)](https://www.browserstack.com/automate/public-build/TTh5YXVzYlBieXBhWHR4aTlvZzBrOEVPNWkzazg2SkU5eWlnNGNwdVhhdz0tLXF6MEU1YjR0NVB3bUkzNVFGd1c3Vmc9PQ==--a1d233bbbce9b8c30d34b0029c9f03264e8d7868)
+[![BrowserStack Status](https://www.browserstack.com/automate/badge.svg?badge_key=TTh5YXVzYlBieXBhWHR4aTlvZzBrOEVPNWkzazg2SkU5eWlnNGNwdVhhdz0tLXF6MEU1YjR0NVB3bUkzNVFGd1c3Vmc9PQ==--a1d233bbbce9b8c30d34b0029c9f03264e8d7868)](https://www.browserstack.com/automate/public-build/<badge_key>)
 
 ## Setup
 
