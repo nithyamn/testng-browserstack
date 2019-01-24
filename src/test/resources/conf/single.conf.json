@@ -11,7 +11,7 @@
 
   "environments": {
     "chrome": {
-      "browser": "firefox"
+      "browser": "Chrome"
     }
   }
 }
