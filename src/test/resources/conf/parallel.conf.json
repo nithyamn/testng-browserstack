@@ -11,16 +11,32 @@
 
   "environments": {
     "chrome": {
-      "browser": "chrome"
+      "os": "Windows",
+      "os_version": "10",
+      "browser": "Chrome",
+      "browser_version": "72.0",
+      "resolution": "1024x768"
     },
     "firefox": {
-      "browser": "firefox"
+      "os": "Windows",
+      "os_version": "7",
+      "browser": "Firefox",
+      "browser_version": "65.0",
+      "resolution": "1024x768"
     },
     "safari": {
-      "browser": "safari"
+      "os": "OS X",
+      "os_version": "High Sierra",
+      "browser": "Safari",
+      "browser_version": "11.0",
+      "resolution": "1024x768"
     },
     "ie": {
-      "browser": "internet explorer"
+      "os": "Windows",
+      "os_version": "7",
+      "browser": "IE",
+      "browser_version": "11.0",
+      "resolution": "1024x768"
     }
   }
 }
