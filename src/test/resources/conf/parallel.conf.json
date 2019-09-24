@@ -4,8 +4,8 @@
   "key": "BROWSERSTACK_ACCESS_KEY",
 
   "capabilities": {
-    "build": "testng-browserstack",
-    "name": "parallel_test",
+    "project": "Java Framework Tests",
+    "build": "TestNG Samples",
     "browserstack.debug": true
   },
 
@@ -32,6 +32,146 @@
       "resolution": "1024x768"
     },
     "ie": {
+      "os": "Windows",
+      "os_version": "7",
+      "browser": "IE",
+      "browser_version": "11.0",
+      "resolution": "1024x768"
+    },
+    "chrome01": {
+      "os": "Windows",
+      "os_version": "10",
+      "browser": "Chrome",
+      "browser_version": "72.0",
+      "resolution": "1024x768"
+    },
+    "firefox01": {
+      "os": "Windows",
+      "os_version": "7",
+      "browser": "Firefox",
+      "browser_version": "65.0",
+      "resolution": "1024x768"
+    },
+    "safari01": {
+      "os": "OS X",
+      "os_version": "High Sierra",
+      "browser": "Safari",
+      "browser_version": "11.0",
+      "resolution": "1024x768"
+    },
+    "ie01": {
+      "os": "Windows",
+      "os_version": "7",
+      "browser": "IE",
+      "browser_version": "11.0",
+      "resolution": "1024x768"
+    },
+    "chrome02": {
+      "os": "Windows",
+      "os_version": "10",
+      "browser": "Chrome",
+      "browser_version": "72.0",
+      "resolution": "1024x768"
+    },
+    "firefox02": {
+      "os": "Windows",
+      "os_version": "7",
+      "browser": "Firefox",
+      "browser_version": "65.0",
+      "resolution": "1024x768"
+    },
+    "safari02": {
+      "os": "OS X",
+      "os_version": "High Sierra",
+      "browser": "Safari",
+      "browser_version": "11.0",
+      "resolution": "1024x768"
+    },
+    "ie02": {
+      "os": "Windows",
+      "os_version": "7",
+      "browser": "IE",
+      "browser_version": "11.0",
+      "resolution": "1024x768"
+    },
+    "chrome03": {
+      "os": "Windows",
+      "os_version": "10",
+      "browser": "Chrome",
+      "browser_version": "72.0",
+      "resolution": "1024x768"
+    },
+    "firefox03": {
+      "os": "Windows",
+      "os_version": "7",
+      "browser": "Firefox",
+      "browser_version": "65.0",
+      "resolution": "1024x768"
+    },
+    "safari03": {
+      "os": "OS X",
+      "os_version": "High Sierra",
+      "browser": "Safari",
+      "browser_version": "11.0",
+      "resolution": "1024x768"
+    },
+    "ie03": {
+      "os": "Windows",
+      "os_version": "7",
+      "browser": "IE",
+      "browser_version": "11.0",
+      "resolution": "1024x768"
+    },
+    "chrome04": {
+      "os": "Windows",
+      "os_version": "10",
+      "browser": "Chrome",
+      "browser_version": "72.0",
+      "resolution": "1024x768"
+    },
+    "firefox04": {
+      "os": "Windows",
+      "os_version": "7",
+      "browser": "Firefox",
+      "browser_version": "65.0",
+      "resolution": "1024x768"
+    },
+    "safari04": {
+      "os": "OS X",
+      "os_version": "High Sierra",
+      "browser": "Safari",
+      "browser_version": "11.0",
+      "resolution": "1024x768"
+    },
+    "ie04": {
+      "os": "Windows",
+      "os_version": "7",
+      "browser": "IE",
+      "browser_version": "11.0",
+      "resolution": "1024x768"
+    },
+    "chrome05": {
+      "os": "Windows",
+      "os_version": "10",
+      "browser": "Chrome",
+      "browser_version": "72.0",
+      "resolution": "1024x768"
+    },
+    "firefox05": {
+      "os": "Windows",
+      "os_version": "7",
+      "browser": "Firefox",
+      "browser_version": "65.0",
+      "resolution": "1024x768"
+    },
+    "safari05": {
+      "os": "OS X",
+      "os_version": "High Sierra",
+      "browser": "Safari",
+      "browser_version": "11.0",
+      "resolution": "1024x768"
+    },
+    "ie05": {
       "os": "Windows",
       "os_version": "7",
       "browser": "IE",
