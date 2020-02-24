@@ -4,15 +4,20 @@
   "key": "BROWSERSTACK_ACCESS_KEY",
 
   "capabilities": {
-    "build": "testng-browserstack",
-    "name": "local_test",
+    "project": "BrowserStack Demo",
+    "build": "TestNG Samples",
     "browserstack.debug": true,
     "browserstack.local": true
   },
 
   "environments": {
     "chrome": {
-      "browser": "chrome"
+      "os": "Windows",
+      "os_version": "10",
+      "browser": "Chrome",
+      "browser_version": "78.0",
+      "resolution": "1024x768",
+      "name": "local run - Chrome"
     }
   }
 }
