@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Parallel" thread-count="24" parallel="tests">
+<suite name="Parallel" thread-count="4" parallel="tests">
     <test name="SingleTestChrome">
         <parameter name="config" value="parallel.conf.json"/>
         <parameter name="environment" value="chrome"/>
@@ -19,7 +19,7 @@
 
     <test name="SingleTestSafari">
         <parameter name="config" value="parallel.conf.json"/>
-        <parameter name="environment" value="safari"/>
+        <parameter name="environment" value="android"/>
         <classes>
             <class name="com.browserstack.SingleTest"/>
         </classes>
@@ -28,166 +28,6 @@
     <test name="SingleTestIE">
         <parameter name="config" value="parallel.conf.json"/>
         <parameter name="environment" value="ie"/>
-        <classes>
-            <class name="com.browserstack.SingleTest"/>
-        </classes>
-    </test>
-
-    <test name="SingleTestChrome01">
-        <parameter name="config" value="parallel.conf.json"/>
-        <parameter name="environment" value="chrome01"/>
-        <classes>
-            <class name="com.browserstack.SingleTest"/>
-        </classes>
-    </test>
-
-    <test name="SingleTestFirefox01">
-        <parameter name="config" value="parallel.conf.json"/>
-        <parameter name="environment" value="firefox01"/>
-        <classes>
-            <class name="com.browserstack.SingleTest"/>
-        </classes>
-    </test>
-
-    <test name="SingleTestSafari01">
-        <parameter name="config" value="parallel.conf.json"/>
-        <parameter name="environment" value="safari01"/>
-        <classes>
-            <class name="com.browserstack.SingleTest"/>
-        </classes>
-    </test>
-
-    <test name="SingleTestIE01">
-        <parameter name="config" value="parallel.conf.json"/>
-        <parameter name="environment" value="ie01"/>
-        <classes>
-            <class name="com.browserstack.SingleTest"/>
-        </classes>
-    </test>
-
-    <test name="SingleTestChrome02">
-        <parameter name="config" value="parallel.conf.json"/>
-        <parameter name="environment" value="chrome02"/>
-        <classes>
-            <class name="com.browserstack.SingleTest"/>
-        </classes>
-    </test>
-
-    <test name="SingleTestFirefox02">
-        <parameter name="config" value="parallel.conf.json"/>
-        <parameter name="environment" value="firefox02"/>
-        <classes>
-            <class name="com.browserstack.SingleTest"/>
-        </classes>
-    </test>
-
-    <test name="SingleTestSafari02">
-        <parameter name="config" value="parallel.conf.json"/>
-        <parameter name="environment" value="safari02"/>
-        <classes>
-            <class name="com.browserstack.SingleTest"/>
-        </classes>
-    </test>
-
-    <test name="SingleTestIE02">
-        <parameter name="config" value="parallel.conf.json"/>
-        <parameter name="environment" value="ie02"/>
-        <classes>
-            <class name="com.browserstack.SingleTest"/>
-        </classes>
-    </test>
-
-    <test name="SingleTestChrome03">
-        <parameter name="config" value="parallel.conf.json"/>
-        <parameter name="environment" value="chrome03"/>
-        <classes>
-            <class name="com.browserstack.SingleTest"/>
-        </classes>
-    </test>
-
-    <test name="SingleTestFirefox03">
-        <parameter name="config" value="parallel.conf.json"/>
-        <parameter name="environment" value="firefox03"/>
-        <classes>
-            <class name="com.browserstack.SingleTest"/>
-        </classes>
-    </test>
-
-    <test name="SingleTestSafari03">
-        <parameter name="config" value="parallel.conf.json"/>
-        <parameter name="environment" value="safari03"/>
-        <classes>
-            <class name="com.browserstack.SingleTest"/>
-        </classes>
-    </test>
-
-    <test name="SingleTestIE03">
-        <parameter name="config" value="parallel.conf.json"/>
-        <parameter name="environment" value="ie03"/>
-        <classes>
-            <class name="com.browserstack.SingleTest"/>
-        </classes>
-    </test>
-
-    <test name="SingleTestChrome04">
-        <parameter name="config" value="parallel.conf.json"/>
-        <parameter name="environment" value="chrome04"/>
-        <classes>
-            <class name="com.browserstack.SingleTest"/>
-        </classes>
-    </test>
-
-    <test name="SingleTestFirefox04">
-        <parameter name="config" value="parallel.conf.json"/>
-        <parameter name="environment" value="firefox04"/>
-        <classes>
-            <class name="com.browserstack.SingleTest"/>
-        </classes>
-    </test>
-
-    <test name="SingleTestSafari04">
-        <parameter name="config" value="parallel.conf.json"/>
-        <parameter name="environment" value="safari04"/>
-        <classes>
-            <class name="com.browserstack.SingleTest"/>
-        </classes>
-    </test>
-
-    <test name="SingleTestIE04">
-        <parameter name="config" value="parallel.conf.json"/>
-        <parameter name="environment" value="ie04"/>
-        <classes>
-            <class name="com.browserstack.SingleTest"/>
-        </classes>
-    </test>
-
-    <test name="SingleTestChrome05">
-        <parameter name="config" value="parallel.conf.json"/>
-        <parameter name="environment" value="chrome05"/>
-        <classes>
-            <class name="com.browserstack.SingleTest"/>
-        </classes>
-    </test>
-
-    <test name="SingleTestFirefox05">
-        <parameter name="config" value="parallel.conf.json"/>
-        <parameter name="environment" value="firefox05"/>
-        <classes>
-            <class name="com.browserstack.SingleTest"/>
-        </classes>
-    </test>
-
-    <test name="SingleTestSafari05">
-        <parameter name="config" value="parallel.conf.json"/>
-        <parameter name="environment" value="safari05"/>
-        <classes>
-            <class name="com.browserstack.SingleTest"/>
-        </classes>
-    </test>
-
-    <test name="SingleTestIE05">
-        <parameter name="config" value="parallel.conf.json"/>
-        <parameter name="environment" value="ie05"/>
         <classes>
             <class name="com.browserstack.SingleTest"/>
         </classes>
