@@ -4,7 +4,7 @@
   "key": "BROWSERSTACK_ACCESS_KEY",
 
   "capabilities": {
-    "project": "SE Demo",
+    "project": "BrowserStack Demo",
     "build": "TestNG Samples",
     "browserstack.debug": true
   },
