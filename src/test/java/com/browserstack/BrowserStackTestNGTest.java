@@ -18,7 +18,7 @@ import org.testng.annotations.BeforeMethod;
 
 public class BrowserStackTestNGTest {
     public WebDriver driver;
-    //private Local l;
+    private Local l;
 
     @BeforeMethod(alwaysRun = true)
     @org.testng.annotations.Parameters(value = { "config", "environment" })
