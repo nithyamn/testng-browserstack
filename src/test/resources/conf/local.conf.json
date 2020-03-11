@@ -7,8 +7,7 @@
     "build": "testng-browserstack",
     "name": "local_test",
     "browserstack.debug": true,
-    "browserstack.local": true,
-    "browserstack.localIdentifier": "BROWSERSTACK_LOCAL_IDENTIFIER"
+    "browserstack.local": true
   },
 
   "environments": {
