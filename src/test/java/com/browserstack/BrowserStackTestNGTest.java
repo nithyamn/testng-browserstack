@@ -24,7 +24,7 @@ public class BrowserStackTestNGTest {
     @org.testng.annotations.Parameters(value = { "config", "environment" })
     @SuppressWarnings("unchecked")
     public void setUp(String config_file, String environment) throws Exception {
-        System.out.println(BROWSERSTACK_LOCAL_IDENTIFIER);
+        System.out.println(System.getenv("BROWSERSTACK_LOCAL_IDENTIFIER"));
         JSONParser parser = new JSONParser();
         JSONObject config = (JSONObject) parser.parse(new FileReader("src/test/resources/conf/" + config_file));
         JSONObject envs = (JSONObject) config.get("environments");
