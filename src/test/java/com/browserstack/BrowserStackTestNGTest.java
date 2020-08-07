@@ -66,6 +66,7 @@ public class BrowserStackTestNGTest {
             l = new Local();
             Map<String, String> options = new HashMap<String, String>();
             options.put("key", accessKey);
+            options.put("force", true);
             options.put("localIdentifier", System.getenv("BROWSERSTACK_LOCAL_IDENTIFIER"));
             l.start(options);
         }
