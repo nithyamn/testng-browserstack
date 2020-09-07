@@ -14,7 +14,6 @@ node {
             }
             withEnv(['BROWSERSTACK_USERNAME=' + user]) {
             sh label: '', returnStatus: true, script: '''#!/bin/bash -l
-                                 mvn install
                                  mvn test -P single
                                '''
             }
