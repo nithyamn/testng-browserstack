@@ -14,7 +14,7 @@ public class SingleTest extends BrowserStackTestNGTest {
         WebElement element = driver.findElement(By.name("q"));
         element.sendKeys("BrowserStack");
         element.submit();
-        Thread.sleep(100000);
+        //Thread.sleep(100000);
 
         Assert.assertEquals("BrowserStack - Google Search", driver.getTitle());
     }
