@@ -18,12 +18,12 @@ node {
                                '''
             }
         }
-        junit testDataPublishers: [[$class: 'AutomateTestDataPublisher']], testResults: '*target/surefire-reports/TEST*.xml**'
+        //junit testDataPublishers: [[$class: 'AutomateTestDataPublisher']], testResults: '*target/surefire-reports/TEST*.xml**'
     }
     
-    /*stage('Archive BrowserStack Automate test results') {
-        junit testDataPublishers: [[$class: 'AutomateTestDataPublisher']], testResults: 'target/browserstack-reports/TEST*.xml'
-    }*/
+    stage('Archive BrowserStack Automate test results') {
+        junit testDataPublishers: [[$class: 'AutomateTestDataPublisher']], testResults: '*target/surefire-reports/TEST*.xml**'
+    }
     
     } catch (e) {
         currentBuild.result = 'FAILURE'
