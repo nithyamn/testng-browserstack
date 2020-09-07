@@ -25,7 +25,7 @@ public class SingleTest extends BrowserStackTestNGTest {
         SessionId session = ((RemoteWebDriver) driver).getSessionId();
         System.out.println(session);
 
-        if(title.contains("BrowserStack"))
+        if(title.contains("BrowserStack1"))
             TestStatus.mark(session,"passed", username, accesskey);
         else
             TestStatus.mark(session,"failed", username, accesskey);
