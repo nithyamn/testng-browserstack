@@ -20,6 +20,8 @@ public class SingleTest extends BrowserStackTestNGTest {
         WebElement element = driver.findElement(By.name("q"));
         element.sendKeys("BrowserStack");
         element.submit();
+        
+        String title = driver.getTitle();
         SessionId session = ((RemoteWebDriver) driver).getSessionId();
         System.out.println(session);
 
