@@ -18,7 +18,7 @@ node {
                                '''
             }
         }
-        junit testDataPublishers: [[$class: 'AutomateTestDataPublisher']], testResults: 'target/surefire-reports/*.xml'
+        junit testDataPublishers: [[$class: 'AutomateTestDataPublisher']], testResults: 'target/surefire-reports/TEST*.xml'
     }
     
     /*stage('Archive BrowserStack Automate test results') {
