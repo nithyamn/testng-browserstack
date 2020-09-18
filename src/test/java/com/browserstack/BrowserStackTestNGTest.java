@@ -61,10 +61,10 @@ public class BrowserStackTestNGTest {
         if (accessKey == null) {
             accessKey = (String) config.get("key");
         }
-        /*if(capabilities.getCapability("browserstack.local") == "true"){
+        if(capabilities.getCapability("browserstack.local") == "true"){
             capabilities.setCapability("browserstack.localIdentifier",System.getenv("BROWSERSTACK_LOCAL_IDENTIFIER"));
-        }*/
-        if (capabilities.getCapability("browserstack.local") != null
+        }
+        /*f (capabilities.getCapability("browserstack.local") != null
                 && capabilities.getCapability("browserstack.local") == "true") {
             l = new Local();
             Map<String, String> options = new HashMap<String, String>();
@@ -72,7 +72,7 @@ public class BrowserStackTestNGTest {
             options.put("force", "true");
             //options.put("localIdentifier", System.getenv("BROWSERSTACK_LOCAL_IDENTIFIER"));
             l.start(options);
-        }
+        }*/
 
         driver = new RemoteWebDriver(
                 new URL("http://" + username + ":" + accessKey + "@" + config.get("server") + "/wd/hub"), capabilities);
