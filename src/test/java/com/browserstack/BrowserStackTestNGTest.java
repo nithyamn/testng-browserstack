@@ -31,9 +31,10 @@ public class BrowserStackTestNGTest {
         JSONParser parser = new JSONParser();
         JSONObject config = (JSONObject) parser.parse(new FileReader("src/test/resources/conf/" + config_file));
         JSONObject envs = (JSONObject) config.get("environments");
-
-        DesiredCapabilities capabilities = new DesiredCapabilities();
+        String buildName = System.getenv("BROWSERSTACK_BUILD_NAME");
         
+        DesiredCapabilities capabilities = new DesiredCapabilities();
+        capabilities.setCapability("build", buildName);
         //capabilities.setCapability("browserstack.localIdentifier",System.getenv("BROWSERSTACK_LOCAL_IDENTIFIER"));
 
         Map<String, String> envCapabilities = (Map<String, String>) envs.get(environment);
