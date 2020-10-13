@@ -27,15 +27,18 @@ public class SingleTest extends BrowserStackTestNGTest {
         System.out.println(session);
         
         JavascriptExecutor jse = (JavascriptExecutor)driver;
-        jse.executeScript("browserstack_executor: {\"action\": \"setSessionStatus\", \"arguments\": {\"status\": \"failed\", \"reason\": \"org.openqa.selenium.TimeoutException: Expected condition failed: waiting for title to be Hotel Search Results. Current title: (tried for 45 second(s) with 500 milliseconds interval) Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11\"}}");
+       
 
+        if(title.equals("BrowserStack - Google Search")) {
+            //TestStatus.mark(session, "passed", username, accesskey);
+            jse.executeScript("browserstack_executor: {\"action\": \"setSessionStatus\", \"arguments\": {\"status\": \"passed\", \"reason\": \"Title Validated\"}}");
 
-        /*if(title.equals("BrowserStack - Google Search")) {
-            TestStatus.mark(session, "passed", username, accesskey);
         }
         else{
-            TestStatus.mark(session,"failed", username, accesskey);
-            Assert.assertEquals("BrowserStack - Google Search", driver.getTitle());
-        }*/
+            //TestStatus.mark(session,"failed", username, accesskey);
+            //Assert.assertEquals("BrowserStack - Google Search", driver.getTitle());
+            jse.executeScript("browserstack_executor: {\"action\": \"setSessionStatus\", \"arguments\": {\"status\": \"failed\", \"reason\": \"Title Not Validated\"}}");
+
+        }
     }
 }
