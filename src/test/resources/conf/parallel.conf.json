@@ -5,6 +5,7 @@
 
   "capabilities": {
     "build": "testng-browserstack",
+    "project":"netent-webinar",
     "name": "parallel_test",
     "browserstack.debug": true
   },
