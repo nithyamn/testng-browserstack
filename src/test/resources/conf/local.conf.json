@@ -10,7 +10,7 @@
     "browserstack.debug": true,
     "browserstack.local": true,
     "browserstack.networkLogs":true,
-    "browserstack.console":"verbose"
+    "browserstack.console": "verbose"
   },
 
   "environments": {
