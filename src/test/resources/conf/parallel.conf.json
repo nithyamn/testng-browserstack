@@ -7,7 +7,9 @@
     "build": "testng-browserstack",
     "project":"netent-webinar",
     "name": "parallel_test",
-    "browserstack.debug": true
+    "browserstack.debug": true,
+    "browserstack.networkLogs":true,
+    "browserstack.console":"verbose"
   },
 
   "environments": {
