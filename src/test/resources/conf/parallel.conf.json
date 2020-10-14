@@ -9,7 +9,7 @@
     "name": "parallel_test",
     "browserstack.debug": true,
     "browserstack.networkLogs":true,
-    "browserstack.console":"verbose"
+    "browserstack.console": "verbose"
   },
 
   "environments": {
