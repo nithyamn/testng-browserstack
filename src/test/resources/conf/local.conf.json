@@ -8,7 +8,9 @@
     "project":"netent-webinar",
     "name": "local_test",
     "browserstack.debug": true,
-    "browserstack.local": true
+    "browserstack.local": true,
+    "browserstack.networkLogs":true,
+    "browserstack.console":"verbose"
   },
 
   "environments": {
