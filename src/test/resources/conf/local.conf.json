@@ -5,6 +5,7 @@
 
   "capabilities": {
     "build": "testng-browserstack",
+    "project":"netent-webinar",
     "name": "local_test",
     "browserstack.debug": true,
     "browserstack.local": true
