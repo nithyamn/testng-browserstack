@@ -3,6 +3,7 @@ package com.browserstack;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.By;
 
 public class LocalTest extends BrowserStackTestNGTest {
 
