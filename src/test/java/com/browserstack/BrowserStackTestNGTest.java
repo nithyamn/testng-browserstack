@@ -66,15 +66,15 @@ public class BrowserStackTestNGTest {
             //capabilities.setCapability("browserstack.localIdentifier",System.getenv("BROWSERSTACK_LOCAL_IDENTIFIER"));
            // capabilities.setCapability("browserstack.localIdentifier","azure_devops");
         }*/
-        /*f (capabilities.getCapability("browserstack.local") != null
+        if(capabilities.getCapability("browserstack.local") != null
                 && capabilities.getCapability("browserstack.local") == "true") {
             l = new Local();
             Map<String, String> options = new HashMap<String, String>();
             options.put("key", accessKey);
-            options.put("force", "true");
+            //options.put("force", "true");
             //options.put("localIdentifier", System.getenv("BROWSERSTACK_LOCAL_IDENTIFIER"));
             l.start(options);
-        }*/
+        }
 
         driver = new RemoteWebDriver(
                 new URL("http://" + username + ":" + accessKey + "@" + config.get("server") + "/wd/hub"), capabilities);
