@@ -12,6 +12,9 @@ public class LocalTest extends BrowserStackTestNGTest {
         //driver.get("http://localhost:8000/");
         //Assert.assertTrue(driver.getTitle().contains("Demo Site"));
         JavascriptExecutor jse = (JavascriptExecutor)driver;
-        jse.executeScript("browserstack_executor: {\"action\": \"setSessionStatus\", \"arguments\": {\"status\": \"passed\", \"reason\": \"Validated\"}}");
+        if(driver.findElement(By.xpath("/html/body")).getText().equals("Up and running"))
+           jse.executeScript("browserstack_executor: {\"action\": \"setSessionStatus\", \"arguments\": {\"status\": \"passed\", \"reason\": \"Validated\"}}");
+       else
+           jse.executeScript("browserstack_executor: {\"action\": \"setSessionStatus\", \"arguments\": {\"status\": \"failed\", \"reason\": \"Not Validated\"}}");
     }
 }
