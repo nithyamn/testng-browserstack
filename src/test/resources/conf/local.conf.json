@@ -8,7 +8,6 @@
     "name": "local_test",
     "browserstack.debug": true,
     "browserstack.local": true,
-    "browserstack.localIdentifier":"azure_devops",
     "browserstack.networkLogs":true,
     "browserstack.console": "verbose"
   },
