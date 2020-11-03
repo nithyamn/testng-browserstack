@@ -64,9 +64,9 @@ public class BrowserStackTestNGTest {
         }
         /*if(capabilities.getCapability("browserstack.local") == "true"){
             //capabilities.setCapability("browserstack.localIdentifier",System.getenv("BROWSERSTACK_LOCAL_IDENTIFIER"));
-           // capabilities.setCapability("browserstack.localIdentifier","azure_devops");
+           //capabilities.setCapability("browserstack.localIdentifier","azure_devops");
         }*/
-        if(capabilities.getCapability("browserstack.local") != null
+        /*if(capabilities.getCapability("browserstack.local") != null
                 && capabilities.getCapability("browserstack.local") == "true") {
             l = new Local();
             Map<String, String> options = new HashMap<String, String>();
@@ -74,7 +74,7 @@ public class BrowserStackTestNGTest {
             //options.put("force", "true");
             //options.put("localIdentifier", System.getenv("BROWSERSTACK_LOCAL_IDENTIFIER"));
             l.start(options);
-        }
+        }*/
 
         driver = new RemoteWebDriver(
                 new URL("http://" + username + ":" + accessKey + "@" + config.get("server") + "/wd/hub"), capabilities);
@@ -83,8 +83,8 @@ public class BrowserStackTestNGTest {
     @AfterMethod(alwaysRun = true)
     public void tearDown() throws Exception {
         driver.quit();
-        if(l != null) {
+        /*if(l != null) {
             l.stop();
-        }
+        }*/
     }
 }
