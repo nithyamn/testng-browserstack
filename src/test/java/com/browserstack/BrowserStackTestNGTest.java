@@ -62,10 +62,10 @@ public class BrowserStackTestNGTest {
         if (accessKey == null) {
             accessKey = (String) config.get("key");
         }
-        /*if(capabilities.getCapability("browserstack.local") == "true"){
-            //capabilities.setCapability("browserstack.localIdentifier",System.getenv("BROWSERSTACK_LOCAL_IDENTIFIER"));
+        if(capabilities.getCapability("browserstack.local") == "true"){
+            capabilities.setCapability("browserstack.localIdentifier",System.getenv("BROWSERSTACK_LOCAL_IDENTIFIER"));
            //capabilities.setCapability("browserstack.localIdentifier","azure_devops");
-        }*/
+        }
         /*if(capabilities.getCapability("browserstack.local") != null
                 && capabilities.getCapability("browserstack.local") == "true") {
             l = new Local();
