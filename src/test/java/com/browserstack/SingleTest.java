@@ -29,7 +29,7 @@ public class SingleTest extends BrowserStackTestNGTest {
         JavascriptExecutor jse = (JavascriptExecutor)driver;
        
 
-        if(title.equals("BrowserStack - Google Search")) {
+        if(title.contains("BrowserStack")) {
             //TestStatus.mark(session, "passed", username, accesskey);
             jse.executeScript("browserstack_executor: {\"action\": \"setSessionStatus\", \"arguments\": {\"status\": \"passed\", \"reason\": \"Title Validated\"}}");
 
