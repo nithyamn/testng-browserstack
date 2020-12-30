@@ -5,7 +5,7 @@
 
   "capabilities": {
     "build": "testng-browserstack",
-    "project":"playtika-webinar",
+    "project":"Jenkins Job",
     "name": "parallel_test",
     "browserstack.debug": true,
     "browserstack.networkLogs":true,
