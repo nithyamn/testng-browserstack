@@ -6,7 +6,7 @@
   "capabilities": {
     "build": "testng-browserstack",
     "name": "local_test",
-    "project":"playtika-webinar",
+    "project":"Jenkins Job",
     "browserstack.debug": true,
     "browserstack.local": true,
     "browserstack.networkLogs":true,
